@@ -1,0 +1,11 @@
+.navbar-logo {
+    height: 60px;
+    width: 52px;
+    background: url("logo.png");
+    background-size: cover;
+}
+
+.navbar-user-container-avatar {
+    width: 50px;
+    margin-right: 10px;
+}
