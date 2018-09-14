@@ -10,7 +10,6 @@ input
     box-sizing: border-box;
     outline: none;
     transition: all 0.3s ease-in-out;
-    clear: left;
 }
 
 input:focus
@@ -35,7 +34,19 @@ input:focus
     min-width: 300px;
 }
 
+.input-box
+{
+    display: flex !important;
+    flex-direction: row !important;
+}
+
 .questions-container
 {
-    width: 300px;
+    width: 320px;
+}
+
+input[type=radio]
+{
+    height: 40px;
+    width: 40px;
 }
