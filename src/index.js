@@ -1,8 +1,32 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./components/App/App";
-import registerServiceWorker from "./registerServiceWorker";
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware } from "redux";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import "./index.css";
+import registerServiceWorker from "./registerServiceWorker";
+import reducers from "./reducers";
+import Login from "./components/Login";
+import MainPage from "./components/MainPage";
+
+const createStoreWithMiddleware = applyMiddleware()(createStore);
+
+ReactDOM.render(
+  <Provider
+    store={createStoreWithMiddleware(
+      reducers,
+      window.__REDUX_DEVTOOLS_EXTENSION__ &&
+        window.__REDUX_DEVTOOLS_EXTENSION__()
+    )}
+  >
+    <BrowserRouter>
+      <Switch>
+        <Route path="/dashboard" component={MainPage} />
+        <Route exact path="/" component={Login} />
+      </Switch>
+    </BrowserRouter>
+  </Provider>,
+  document.getElementById("root")
+);
 registerServiceWorker();
