@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Navbar from "../Navbar/Navbar";
+import Test from "../Test";
 
 export default class index extends Component {
 
@@ -8,6 +9,7 @@ export default class index extends Component {
         return (
             <div>
                 <Navbar history={this.props.history}/>
+                <Test/>
             </div>
         )
     }

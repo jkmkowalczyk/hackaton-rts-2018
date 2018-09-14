@@ -10,7 +10,7 @@ import Sticky from 'react-sticky-el';
 class Navbar extends Component {
 
     state = {
-        userName: JSON.parse(localStorage.getItem("user")).email,
+        userName: localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")).email : ""
     };
 
     handleLogoutClick = () => {
