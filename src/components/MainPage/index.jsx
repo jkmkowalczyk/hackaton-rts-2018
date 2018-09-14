@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
+import Navbar from "../Navbar/Navbar";
 
 export default class index extends Component {
-  render() {
-    return <div>Main Page</div>;
-  }
+    render() {
+        return <div><Navbar/></div>;
+    }
 }
