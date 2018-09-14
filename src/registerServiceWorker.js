@@ -49,8 +49,6 @@ export default function register() {
         registerValidSW(swUrl);
       }
     });
-  } else {
-    console.log("didnt registerd sw Current env:", process.env.NODE_ENV);
   }
 }
 
