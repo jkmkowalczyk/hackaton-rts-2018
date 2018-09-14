@@ -5,7 +5,7 @@ export default class CategoryList extends Component
     render()
     {
         return(
-            <select>
+            <select className="category-select">
                 <option value="Literatura">Literatura</option>
                 <option value="Fizyka">Fizyka</option>
                 <option value="Matematyka">Matematyka</option>
