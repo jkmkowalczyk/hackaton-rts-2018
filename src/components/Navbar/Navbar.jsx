@@ -4,24 +4,37 @@ import './Navbar.css';
 import Searchbar from "./Searchbar";
 import {Menu} from 'semantic-ui-react';
 import avatar from './default-avatar.png';
+import fire from "../../fire";
 
 class Navbar extends Component {
 
     state = {
-        userName: "Piotr",
+        userName: JSON.parse(localStorage.getItem("user")).email,
+    };
+
+    handleLogoutClick = () => {
+        fire.auth().signOut().then(
+            () => {
+                localStorage.setItem("isAuthenticated", "false");
+                this.props.history.push("/");
+            }
+        ).catch((err) => console.log(err.message));
     };
 
     handleItemClick = () => {
+        this.props.history.push("/dashboard");
     };
 
     render() {
-        const {activeItem} = this.state;
 
         return (
             <div className="navbar">
                 <Menu>
                     <Menu.Item onClick={this.handleItemClick}>
                         <div className="navbar-logo"/>
+                    </Menu.Item>
+                    <Menu.Item>
+                        <p className="navbar-title">REACT TESTING SERVICE</p>
                     </Menu.Item>
 
                     < Menu.Menu position='right'>
@@ -32,8 +45,7 @@ class Navbar extends Component {
                             <img className="navbar-user-container-avatar" src={avatar}/>
                             <div className="navbar-user-container-name"> Cześć {this.state.userName}</div>
                         </Menu.Item>
-
-                        <Menu.Item name='help' active={activeItem === 'help'} onClick={this.handleItemClick}>
+                        <Menu.Item onClick={this.handleLogoutClick}>
                             Wyloguj
                         </Menu.Item>
                     </Menu.Menu>

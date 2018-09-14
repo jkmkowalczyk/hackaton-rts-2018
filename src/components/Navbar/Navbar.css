@@ -6,6 +6,11 @@
 }
 
 .navbar-user-container-avatar {
-    width: 50px;
-    margin-right: 10px;
+
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.navbar-title {
+    color: #7ac242;
 }

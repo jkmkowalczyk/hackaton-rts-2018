@@ -3,6 +3,6 @@ import Navbar from "../Navbar/Navbar";
 
 export default class index extends Component {
     render() {
-        return <div><Navbar/></div>;
+        return <div><Navbar history={this.props.history}/></div>;
     }
 }
