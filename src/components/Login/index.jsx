@@ -1,11 +1,9 @@
 import React, {Component} from "react";
-import {Link} from "react-router-dom";
 import fire from "../../fire";
 
-import {Form, Icon, Input, Button, Checkbox} from "antd";
+import {Button, Checkbox, Form, Icon, Input} from "antd";
 import "antd/dist/antd.css";
 import "./style.css";
-import GoogleLoginButton from "./GoogleLoginButton";
 
 const FormItem = Form.Item;
 
