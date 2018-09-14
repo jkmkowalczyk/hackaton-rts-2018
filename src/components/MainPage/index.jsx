@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Categories from "../Categories/Categories";
 import "../../index.css";
+import Navbar from "../Navbar/Navbar";
 
 export default class index extends Component {
   render() {
@@ -17,4 +18,7 @@ export default class index extends Component {
         </div>
       </div>;
   }
+            <div>
+                <Navbar history={this.props.history}/>
+            </div>
 }

@@ -1,0 +1,16 @@
+.navbar-logo {
+    height: 60px;
+    width: 52px;
+    background: url("logo.png");
+    background-size: cover;
+}
+
+.navbar-user-container-avatar {
+
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.navbar-title {
+    color: #7ac242;
+}
