@@ -58,6 +58,10 @@ class Login extends Component {
   onAuthStateChange() {
     fire.auth().onAuthStateChanged(user => {
       if (user) {
+        localStorage.setItem("user", JSON.stringify({ uid: user.uid }));
+        localStorage.setItem("isAuthenticated", "true");
+        console.log(JSON.parse(localStorage.getItem("user")));
+        console.log(localStorage.getItem("isAuthenticated"));
         this.props.history.push("/dashboard");
       } else {
         console.log("not logged in");

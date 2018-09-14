@@ -9,6 +9,7 @@ import registerServiceWorker from "./registerServiceWorker";
 import reducers from "./reducers";
 import Login from "./components/Login";
 import MainPage from "./components/MainPage";
+import Auth from "./components/Auth";
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
@@ -23,7 +24,8 @@ ReactDOM.render(
     <BrowserRouter>
       <Switch>
         <Route path="/dashboard" component={MainPage} />
-        <Route exact path="/" component={Login} />
+        <Route exact path="/login" component={Login} />
+        <Route path="/" component={Auth} />
       </Switch>
     </BrowserRouter>
   </Provider>,
