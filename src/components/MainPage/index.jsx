@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Navbar from "../Navbar/Navbar";
 import fire from "../../fire";
+import Quiz from "../Quiz";
 
 export default class index extends Component {
     writeToFirebase() {
@@ -39,6 +40,7 @@ export default class index extends Component {
                     {this.writeToFirebase()}
                     {this.readFromFirebase()}
                 </div>
+                <Quiz/>
             </div>
         );
     }

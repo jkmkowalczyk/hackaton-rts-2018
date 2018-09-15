@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import fire from '../../fire';
 
 
-class Test extends Component {
+class Quiz extends Component {
 
 
     q;
@@ -16,18 +16,17 @@ class Test extends Component {
     };
 
     componentWillMount() {
-
+        this.get()
     };
 
 
     render() {
         return (
             <div>
-                {this.q}
                 {console.log(this.q)}
             </div>
         )
     }
 }
 
-export default Test
+export default Quiz
