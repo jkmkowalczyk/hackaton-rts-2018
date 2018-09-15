@@ -68,42 +68,40 @@ class Login extends Component {
     }
 
     render() {
-        return (
-            <Form onSubmit={this.handleSubmit} className="login-form">
+        return <div>
+            <div className="login-content">
+              <div className="login-overlay" />
+            </div>
+            <div >
+                <div className="logo">
+                    <div className="login-logo" />
+                </div>
+                <div>
+                    <p>
+                       Masz ważny egzamin? Nie wiesz jak się do niego przygotować? W takim razie świetnie trafiłeś/aś!  Już teraz zaloguj się do RTS i przekonaj się jak nauka z nami może być prosta i przyjemna.
+                    </p>
+                </div>
+                <Form onSubmit={this.handleSubmit} className="login-form">
                 <FormItem>
-                    <Input
-                        prefix={<Icon type="user" style={{color: "rgba(0,0,0,.25)"}}/>}
-                        placeholder="Username"
-                        value={this.state.email}
-                        onChange={this.onEmailChange.bind(this)}
-                    />
+                    <Input prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />} placeholder="Username" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
                 </FormItem>
                 <FormItem>
-                    <Input
-                        prefix={<Icon type="lock" style={{color: "rgba(0,0,0,.25)"}}/>}
-                        type="password"
-                        placeholder="Password"
-                        value={this.state.password}
-                        onChange={this.onPasswordChange.bind(this)}
-                    />
+                    <Input prefix={<Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />} type="password" placeholder="Password" value={this.state.password} onChange={this.onPasswordChange.bind(this)} />
                 </FormItem>
                 <FormItem className="bottom-items-wrapper">
-                    <Checkbox>Remember me</Checkbox>
+                    <Checkbox>Zapamietaj mnie</Checkbox>
                     <a className="login-form-forgot" href="">
-                        Forgot password
+                    Przypomnij hasło
                     </a>
-                    <Button
-                        type="primary"
-                        htmlType="submit"
-                        className="login-form-button"
-                        onClick={this.handleLoginClick.bind(this)}
-                    >
-                        Log in
+                    <Button type="primary" htmlType="submit" className="login-form-button" onClick={this.handleLoginClick.bind(this)}>
+                    Zaloguj się
                     </Button>
-                    Or <a href="">register now!</a>
+                    lub <a href="">Zarejestruj się już teraz!</a>
                 </FormItem>
-            </Form>
-        );
+                </Form>
+            </div>
+            
+          </div>;
     }
 }
 

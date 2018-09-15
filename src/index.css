@@ -1,6 +1,39 @@
+html{
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.content{
+   background:url(img/mooning.png) top center;
+   padding-bottom: 5%;
+   font-family: 'Montserrat', sans-serif;
+}
+.header{
+  background:url(img/header1.jpg);
+  background-color: #cccccc;
+  height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.header-overlay{
+  height: 900px;
+  background-color: #3c601f;
+  opacity: 0.8;
+}
+.header-overlay > p{
+  color: white;
+  font-size: 70px;
+  padding: 13%;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  opacity: 1;
 }
 
 .navbar .item {
@@ -13,6 +46,9 @@ body {
 }
 
 .item {
-    padding: 0 10px !important;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Montserrat', sans-serif;
 }
+.nav{
+  z-index: 10;
+}
+
