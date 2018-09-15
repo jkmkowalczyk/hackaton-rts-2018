@@ -1,45 +1,53 @@
 import React, { Component } from "react";
 import Navbar from "../Navbar/Navbar";
+import { connect } from "react-redux";
+import { fetchTests } from "../../actions";
+import Quiz from "../Quiz";
 import fire from "../../fire";
+import _ from "lodash";
 
-export default class index extends Component {
-  writeToFirebase() {
-    fire
-      .database()
-      .ref("user/test")
-      .set({
-        username: "Jakub",
-        email: "test@test.com",
-        uid: "asd"
-      }),
-      function(err) {
-        if (err) {
-          console.log(err.message);
-        } else {
-          console.log("Data added successfully");
-        }
-      };
+class MainPage extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { tests: [] };
   }
 
-  readFromFirebase() {
+  componentDidMount() {
     fire
       .database()
-      .ref("users/test")
-      .on("value", snapshot => {
-        console.log(snapshot.val());
-        return <div>{snapshot.val()}</div>;
+      .ref("tests")
+      .once("value")
+      .then(snapshot => {
+        this.setState({
+          tests: snapshot.val()
+        });
       });
+  }
+
+  renderTests() {
+    return _.map(this.state.tests, obj => {
+      return <Quiz test={obj} />;
+    });
   }
 
   render() {
     return (
       <div>
         <Navbar history={this.props.history} />
-        <div>
-          {this.writeToFirebase()}
-          {this.readFromFirebase()}
-        </div>
+        <div>{this.renderTests()}</div>
       </div>
     );
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    tests: state.tests
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  { fetchTests }
+)(MainPage);

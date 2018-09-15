@@ -1,5 +1,6 @@
 {
   "test1": {
+    "name": "Stolice",
     "category": "geografia",
     "pytania": [
       {
@@ -41,6 +42,7 @@
     ]
   },
   "test5": {
+    "name": "Stolice 123",
     "category": "geografia",
     "pytania": [
       {
@@ -82,6 +84,7 @@
     ]
   },
   "test2": {
+    "name": "Miasta",
     "category": "matematyka",
     "pytania": [
       {
@@ -123,6 +126,7 @@
     ]
   },
   "test3": {
+    "name": "Zabawki",
     "category": "geografia",
     "pytania": [
       {
@@ -164,6 +168,7 @@
     ]
   },
   "test4": {
+    "name": "Auta",
     "category": "geografia",
     "pytania": [
       {
@@ -205,6 +210,7 @@
     ]
   },
   "test8": {
+    "name": "Samoloty",
     "category": "polski",
     "pytania": [
       {
