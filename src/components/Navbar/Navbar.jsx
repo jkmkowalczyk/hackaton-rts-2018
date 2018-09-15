@@ -35,28 +35,31 @@ class Navbar extends Component {
     };
 
     render() {
-        return (
-            <Sticky>
-                <Menu>
-                    <Menu.Item onClick={this.handleItemClick}>
-                        <div className="navbar-logo"/>
-                        <p className="navbar-title">REACT TESTING SERVICE</p>
-                    </Menu.Item>
-                    <Menu.Menu position="right">
-                        <Menu.Item>
-                            <Searchbar/>
-                        </Menu.Item>
-                        <Menu.Item>
-                            <img className="navbar-user-container-avatar" src={avatar}/>
-                            <div className="navbar-user-container-name">
-                                Cześć {this.state.userName}
-                            </div>
-                        </Menu.Item>
-                        <Menu.Item onClick={this.handleLogoutClick}>Wyloguj</Menu.Item>
-                    </Menu.Menu>
-                </Menu>
-            </Sticky>
-        );
+        return <Sticky>
+            <Menu>
+              <Menu.Item onClick={this.handleItemClick}>
+                <div className="navbar-logo" />
+                <p className="navbar-title">REACT TESTING SERVICE</p>
+              </Menu.Item>
+              <Menu.Menu position="right">
+              <Menu.Item>
+                    <button className="add-button">+</button>
+              </Menu.Item>
+                <Menu.Item>
+                  <Searchbar />
+                </Menu.Item>
+                <Menu.Item>
+                  <img className="navbar-user-container-avatar" src={avatar} />
+                  <div className="navbar-user-container-name">
+                    Cześć {this.state.userName}
+                  </div>
+                </Menu.Item>
+                <Menu.Item onClick={this.handleLogoutClick}>
+                  Wyloguj
+                </Menu.Item>
+              </Menu.Menu>
+            </Menu>
+          </Sticky>;
     }
 }
 

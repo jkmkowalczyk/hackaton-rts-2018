@@ -74,6 +74,7 @@
   flex-wrap: wrap;
   max-width: 70%;
   margin: 5% auto;
+  position: relative;
 }
 .Categories-container-header {
   display: flex;
@@ -91,4 +92,24 @@ h2 {
   left: 5%;
   transform: rotate(180deg);
   font-family: "Montserrat", sans-serif;
+}
+.welcome-text{
+  z-index: 20;
+  color: white;
+}
+
+@media screen and (max-width: 615px)
+{
+   h2{
+     font-size: 3em;
+     writing-mode: horizontal-tb;
+     transform: rotate(360deg);
+     top: 130%;
+     left: 20%;
+   }
+   .Categories-container{
+ 
+  margin: 50% auto;
+
+}
 }

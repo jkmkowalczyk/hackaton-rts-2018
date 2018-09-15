@@ -18,3 +18,9 @@
 .sticky{
     z-index: 10;
 }
+@media screen and (max-width: 615px)
+{
+   .navbar-title{
+       display: hidden;
+   }
+}
