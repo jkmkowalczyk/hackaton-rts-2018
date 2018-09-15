@@ -36,12 +36,16 @@ export default class QuestionsList extends Component
             temp6 !== ''
         )
         {
+            document.getElementById('sub-container').style.height = 430+"px";
+            document.getElementById('add-btn').disabled = false;
+            document.getElementById('add-btn').style.backgroundColor = "rgb(241, 244, 247)";
+            document.getElementById('add-btn').style.cursor = "pointer";
             this.state.array.push({pyt: temp,
                 odpa: temp2,
                 odpb: temp3,
                 odpc: temp4,
                 odpd: temp5,
-                odp: temp6});
+                odp: document.getElementById("odp"+(this.state.i-1).toString()).value});
             this.setState({questions: <QuestionsItem key={"question"+this.state.i} Key={this.state.i}/>});
             this.state.i=this.state.i+1;
         }else
@@ -69,8 +73,8 @@ export default class QuestionsList extends Component
             if(temp6 === '')
             {
                 document.getElementById("hide").style.display='inline';
-                document.getElementById("hide").style.top = e.clientY-230+'px';
-                document.getElementById("hide").style.left = 555+'px';
+                document.getElementById("hide").style.top = e.pageY-160+'px';
+                document.getElementById("hide").style.left = 550+'px';
             }
         }
     }
@@ -89,42 +93,10 @@ export default class QuestionsList extends Component
                 .catch(err=>err.message);
         }else
         {
-            let temp = document.getElementById("pyt"+(this.state.i-1).toString()).value;
-            let temp2 = document.getElementById("odpa"+(this.state.i-1).toString()).value;
-            let temp3 = document.getElementById("odpb"+(this.state.i-1).toString()).value;
-            let temp4 = document.getElementById("odpc"+(this.state.i-1).toString()).value;
-            let temp5 = document.getElementById("odpd"+(this.state.i-1).toString()).value;
-            let temp6 = document.getElementById("odp"+(this.state.i-1).toString()).innerText;
             if(document.getElementById("name-input").value === '')
                 document.getElementById("name-input").style.borderColor = "red";
             if(document.querySelector(".category-select").selectedIndex === 0)
                 document.querySelector(".category-select").style.borderColor = "red";
-            if(temp === '')
-            {
-                document.getElementById("pyt"+(this.state.i-1).toString()).style.borderColor = "red";
-            }
-            if(temp2 === '')
-            {
-                document.getElementById("odpa"+(this.state.i-1).toString()).style.borderColor = "red";
-            }
-            if(temp3 === '')
-            {
-                document.getElementById("odpb"+(this.state.i-1).toString()).style.borderColor = "red";
-            }
-            if(temp4 === '')
-            {
-                document.getElementById("odpc"+(this.state.i-1).toString()).style.borderColor = "red";
-            }
-            if(temp5 === '')
-            {
-                document.getElementById("odpd"+(this.state.i-1).toString()).style.borderColor = "red";
-            }
-            if(temp6 === '')
-            {
-                document.getElementById("hide").style.display='inline';
-                document.getElementById("hide").style.top = e.clientY-230+'px';
-                document.getElementById("hide").style.left = 555+'px';
-            }
         }
     }
 
@@ -142,18 +114,23 @@ export default class QuestionsList extends Component
                 <div>
                     <CategoryList/>
                     <input id="name-input" onFocus={e => {e.target.placeholder=""}} onBlur={e => {e.target.placeholder="Podaj nazwę...";this.CheckInput(e);}} placeholder="Podaj nazwę..."></input>
-                    {this.state.array.map(i => {if(i)return (<div key={"qs"+this.state.it} className="questions-submited">
-                        <div key={"op"+this.state.it} className="q-submited">Pytanie: {i.pyt}</div>
-                        <div key={"oa"+this.state.it} className="q-submited">Odpowiedź A: {i.odpa}</div>
-                        <div key={"ob"+this.state.it} className="q-submited">Odpowiedź B: {i.odpb}</div>
-                        <div key={"oc"+this.state.it} className="q-submited">Odpowiedź C: {i.odpc}</div>
-                        <div key={"od"+this.state.it} className="q-submited">Odpowiedź D: {i.odpd}</div>
-                        <div key={"a"+this.state.it++} className="q-submited">Odpowiedź Prawidłowa: {i.odp}</div>
-                    </div>)})}
+                    <div className="bar"></div>
+                    <div id="sub-container">
+                        {this.state.array.map(i => {if(i)return (<div key={"qs"+this.state.it} className="questions-submited">
+                            <div key={"op"+this.state.it} className="q-submited">Pytanie:   <p>{i.pyt}</p></div>
+                            <div key={"oa"+this.state.it} className="q-submited">Odpowiedź A:  <p>{i.odpa}</p></div>
+                            <div key={"ob"+this.state.it} className="q-submited">Odpowiedź B:  <p>{i.odpb}</p></div>
+                            <div key={"oc"+this.state.it} className="q-submited">Odpowiedź C:  <p>{i.odpc}</p></div>
+                            <div key={"od"+this.state.it} className="q-submited">Odpowiedź D:  <p>{i.odpd}</p></div>
+                            <div key={"a"+this.state.it++} className="q-submited">Prawidłowa odpowiedź:  <p>{i.odp}</p></div>
+                        </div>)})}
+                    </div>
                     <div className="questions-container"><div>{this.state.questions}</div></div>
+                    <div className="q-submited">Liczba wczytanych pytań:  {this.state.i-1}</div>
+                    <div className="bar"></div>
                     <button id="next-btn" onClick={this.BtnClick.bind(this)}>Następny</button>
-                    <button id="add-btn" onClick={this.writeToFirebase.bind(this)}>Dodaj!</button>
-                    <div id="hide">Zaznacz prawidłowa odpowiedź!</div>
+                    <button id="add-btn" onClick={this.writeToFirebase.bind(this)} disabled>Wyślij!</button>
+                    <div id="hide">Zaznacz prawidłową odpowiedź!</div>
                 </div>
             </div>
         );

@@ -75,6 +75,14 @@ export default class QuestionsItem extends Component
                     </div>
                 </form>,
                 <div  key={"p"+this.props.Key}>Prawidłowa odpowiedź: <p id={"odp"+this.props.Key} key={"ans"+this.props.Key}>{e.target.value}</p></div>]});
+        if(e.target.value === 'A')
+            document.getElementById("odp"+this.props.Key).value=document.getElementById("odpa"+this.props.Key).value;
+        else if(e.target.value === 'B')
+            document.getElementById("odp"+this.props.Key).value=document.getElementById("odpb"+this.props.Key).value;
+        else if(e.target.value === 'C')
+            document.getElementById("odp"+this.props.Key).value=document.getElementById("odpc"+this.props.Key).value;
+        else if(e.target.value === 'D')
+            document.getElementById("odp"+this.props.Key).value=document.getElementById("odpd"+this.props.Key).value;
         e.target.nextElementSibling.style.borderColor = "green";
         this.state.lastClicked=e.target.nextElementSibling;
     }

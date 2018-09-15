@@ -31,25 +31,50 @@ input:focus
 .wrapper > div
 {
     width: 400px;
-    background: rgba(123,132,123,0.70);
-    padding: 10px;
+    background: rgba(122, 194, 66, 0.7);
+    padding: 40px 20px;
 }
 
 .questions-submited
 {
     margin-top: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    border-bottom: 1px dotted #5c5754;
+}
+
+#sub-container
+{
+    height: 1px;
+    overflow-y: scroll;
+    background: rgba(118, 189, 65, 0.7);
+    box-shadow: inset 0 0 10px -1px;
 }
 
 .q-submited
 {
+    display: block !important;
     text-align: left;
-    min-width: 300px;
+    width: 300px;
+    color: #975a51;
+}
+
+.q-submited > p
+{
+    color: black;
 }
 
 .input-box
 {
     display: flex !important;
     flex-direction: row !important;
+}
+
+.bar
+{
+    margin-top: 15px;
+    border-bottom: 1px solid grey;
 }
 
 .questions-container > div
@@ -59,7 +84,8 @@ input:focus
 }
 
 .questions-container
-{ display: flex;
+{
+    display: flex;
     justify-content: center;
 }
 
@@ -116,6 +142,12 @@ select:focus
     outline: none;
 }
 
+#add-btn
+{
+    background-color: rgb(125, 128, 131);
+    cursor: not-allowed;
+}
+
 #next-btn:hover, #add-btn:hover
 {
     background-color: rgb(210, 213, 216);
@@ -150,4 +182,22 @@ select:focus
     transform: skew(0, 20deg);
     margin-top: -18px;
     margin-left: -15px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    color: yellow;
+    background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffcf39;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ba8c33;
 }
