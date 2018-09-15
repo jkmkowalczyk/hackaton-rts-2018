@@ -40,7 +40,7 @@ class MainPage extends Component {
         <div className="nav">
           <Navbar history={this.props.history} />
         </div>
-        <div className="header">
+        <div className="main-header">
           <div className="header-overlay">
             <p>
               „Powiedz mi, to zapomnę. Naucz mnie, to może zapamiętam. Zaangażuj

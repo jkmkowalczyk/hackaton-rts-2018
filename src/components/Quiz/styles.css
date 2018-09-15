@@ -1,0 +1,12 @@
+.question {
+    margin-bottom: 50px;
+    width: 500px;
+}
+
+.question-single {
+    height: 60px;
+}
+
+.answer-single {
+    height: 40px;
+}
