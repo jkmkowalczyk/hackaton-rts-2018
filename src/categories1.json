@@ -1,0 +1,86 @@
+{
+  "test9": {
+    "name": "Akomodacja",
+    "category": "biologia",
+    "pytania": [
+      {
+        "id": "1",
+        "pyt": "Akomodacja oka polega na",
+        "odpa": "niemoznosc rozpoznawania barw",
+        "odpb": "mimowolnej, rytmicznej oscylacji galek ocznych",
+        "odpc": "zmianie ksztaltu soczewek i jej odleglosci od siatkowki",
+        "odpd": "przenikaniu substancji drazniacej do oka",
+        "odp": "zmianie ksztaltu soczewek i jej odleglosci od siatkowki"
+      },
+      {
+        "id": "2",
+        "pyt": "Funkcja trabki Eustachiusza jest",
+        "odpa": "odbieranie drgan fali dzwiekowej",
+        "odpb": "odbieranie i przetwarzanie wrazen sluchowych",
+        "odpc": "wyrownanie cisnienia wewnetrznego w uchu",
+        "odpd": "przetworzenie pobieranych fal dzwiekowych w energie drgan mechanicznych",
+        "odp": "wyrownanie cisnienia wewnetrznego w uchu"
+      },
+      {
+        "id": "3",
+        "pyt": "Kosteczki sluchowe naleza",
+        "odpa": "do ucha wewnetrznego",
+        "odpb": "do ucha zewnetrznego",
+        "odpc": "do ucha srodkowego",
+        "odpd": "do blony bebenkowej",
+        "odp": "do ucha srodkowego"
+      },
+      {
+        "id": "4",
+        "pyt": "W warunkach deficytu tlenowego, podczas wysilku powstaje kwas mlekowy, wskaz gdzie",
+        "odpa": "w mozgu",
+        "odpb": "w miesniach np. dluglowych",
+        "odpc": "w sercu",
+        "odpd": "w biodrach",
+        "odp": "w miesniach np. dluglowych"
+      }
+    ]
+  },
+  "test10": {
+    "name": "Pierwiastki",
+    "category": "chemia",
+    "pytania": [
+      {
+        "id": "1",
+        "pyt": "Mineralem boru jest",
+        "odpa": "Boraks",
+        "odpb": "Kermit",
+        "odpc": "Aszaryt",
+        "odpd": "Wszystkie odpowiedzi sa poprawne",
+        "odp": "Wszystkie odpowiedzi sa poprawne"
+      },
+      {
+        "id": "2",
+        "pyt": "Radioaktywny metal o liczbie atomowej 84 odkryty przez Marie Sklodowska-Curie i Piotra Curie to",
+        "odpa": "Polon",
+        "odpb": "Rad",
+        "odpc": "Iryd",
+        "odpd": "Uran",
+        "odp": "Madryt"
+      },
+      {
+        "id": "3",
+        "pyt": "Syntetyczny pierwiastek ununtrium zostal odkryty w 2004 roku przez zespol uczonych",
+        "odpa": "USA",
+        "odpb": "Niemiec",
+        "odpc": "Japonii",
+        "odpd": "Rosji",
+        "odp": "Japonii"
+      },
+      {
+        "id": "4",
+        "pyt": "Ma wlasciwosci antykorozyjne, jest skladnikiem stali nierdzewnych. Stosuje sie go tez jako zewnetrzna warstwe elementow stalowych. Mowa o",
+        "odpa": "Srebrze",
+        "odpb": "Chromie",
+        "odpc": "Tytanie",
+        "odpd": "Niklu",
+        "odp": "Chromie"
+      }
+    ]
+  }
+}

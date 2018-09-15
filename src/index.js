@@ -13,6 +13,7 @@ import Auth from "./components/Auth";
 import PrivateRoute from "./components/PrivateRoute";
 import Quiz from "./components/Quiz";
 import Quizes from "./components/Quizes";
+import QuestionsList from "./components/QuestionsList/QuestionsList";
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
@@ -27,6 +28,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Switch>
         <Route path="/login" component={Login} />
+        <PrivateRoute path="/new" component={QuestionsList} />
         <PrivateRoute path="/category/:id" component={Quizes} />
         <PrivateRoute path="/test/:id" component={Quiz} />
         <PrivateRoute path="/dashboard" component={MainPage} />

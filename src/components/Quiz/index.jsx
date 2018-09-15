@@ -3,6 +3,7 @@ import fire from "../../fire";
 import { Button } from "semantic-ui-react";
 import _ from "lodash";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 class Quiz extends Component {
   constructor(props) {
@@ -66,7 +67,9 @@ class Quiz extends Component {
           <div className="background-question">
             {this.renderTest()}
             <div className="button-container">
-              <Button className="back">Wyjdź</Button>
+              <Link to="/dashboard">
+                <Button className="back">Wyjdź</Button>
+              </Link>
               <Button className="submit">Sprawdź mnie</Button>
             </div>
           </div>
