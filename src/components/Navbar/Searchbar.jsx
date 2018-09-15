@@ -24,10 +24,11 @@ class Searchbar extends Component {
         return (
             <div className="searchbar-container">
                 <AutoComplete
-                    style={{width: 200}}
+                    style={{width: 300}}
                     dataSource={this.state.testList}
                     placeholder="znajdź test"
                     filterOption={(inputValue, option) => option.props.children.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1}
+                    autoFocus={true}
                 />
             </div>
         )
