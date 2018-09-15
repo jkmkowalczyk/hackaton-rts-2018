@@ -3,6 +3,7 @@ import Category from "./Category";
 import "./Categories.css";
 import fire from "../../fire";
 import _ from "lodash";
+import { Link } from "react-router-dom";
 
 class Categories extends Component {
   constructor(props) {
@@ -23,7 +24,11 @@ class Categories extends Component {
     let n = 0;
     return _.map(this.state.categories, (obj, index) => {
       n++;
-      return <Category name={obj.name} id={index} number={n} />;
+      return (
+        <Link to={`category/${index}`}>
+          <Category name={obj.name} id={index} number={n} />{" "}
+        </Link>
+      );
     });
   }
 
