@@ -15,25 +15,6 @@ class MainPage extends Component {
     this.state = { tests: [] };
   }
 
-  componentDidMount() {
-    fire
-      .database()
-      .ref("tests")
-      .once("value")
-      .then(snapshot => {
-        console.log(" main page ", snapshot.val());
-        this.setState({
-          tests: snapshot.val()
-        });
-      });
-  }
-
-  renderTests() {
-    return _.map(this.state.tests, obj => {
-      return <Quizes test={obj} />;
-    });
-  }
-
   render() {
     return (
       <div className="content">
@@ -52,7 +33,6 @@ class MainPage extends Component {
         <div>
           <Categories />
         </div>
-        <div>{this.renderTests()}</div>
       </div>
     );
   }

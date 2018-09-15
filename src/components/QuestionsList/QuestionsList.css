@@ -1,0 +1,203 @@
+input
+{
+    width: 300px;
+    background-color: rgb(253, 255, 253);
+    color: rgb(147, 147, 147);
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus
+{
+    box-shadow: 3px 2px 10px 4px rgba(120, 120, 120, 0.25);
+    -webkit-box-shadow: 3px 2px 10px 4px rgba(120, 120, 120, 0.25);
+    -moz-box-shadow: 3px 2px 10px 4px rgba(120, 120, 120, 0.25);
+    border-color: #c1c1c1;
+    color: rgb(45, 9, 9);
+}
+
+.wrapper, .questions-submited
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper > div
+{
+    width: 400px;
+    background: rgba(122, 194, 66, 0.7);
+    padding: 40px 20px;
+}
+
+.questions-submited
+{
+    margin-top: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    border-bottom: 1px dotted #5c5754;
+}
+
+#sub-container
+{
+    height: 1px;
+    overflow-y: scroll;
+    background: rgba(118, 189, 65, 0.7);
+    box-shadow: inset 0 0 10px -1px;
+}
+
+.q-submited
+{
+    display: block !important;
+    text-align: left;
+    width: 300px;
+    color: #975a51;
+}
+
+.q-submited > p
+{
+    color: black;
+}
+
+.input-box
+{
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.bar
+{
+    margin-top: 15px;
+    border-bottom: 1px solid grey;
+}
+
+.questions-container > div
+{
+    width: 320px;
+    margin-top: 30px;
+}
+
+.questions-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+input[type=radio]
+{
+    height: 40px;
+    width: 40px;
+    box-shadow: none;
+}
+
+select
+{
+    width: 300px;
+    height: 25px;
+    background-color: rgb(253, 255, 253);
+    color: rgb(147, 147, 147);
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+select:focus
+{
+    -webkit-box-shadow: 3px 2px 10px 4px rgba(120, 120, 120, 0.25);
+    -moz-box-shadow: 3px 2px 10px 4px rgba(120, 120, 120, 0.25);
+    box-shadow: 3px 2px 10px 4px rgba(120, 120, 120, 0.25);
+    border-color: #c1c1c1;
+    color: rgb(45, 9, 9);
+}
+
+.form-input
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#next-btn, #add-btn {
+    width: 300px;
+    background-color: rgb(241, 244, 247);
+    font-size: 20px;
+    color: #4f4f4f;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+#add-btn
+{
+    background-color: rgb(125, 128, 131);
+    cursor: not-allowed;
+}
+
+#next-btn:hover, #add-btn:hover
+{
+    background-color: rgb(210, 213, 216);
+}
+
+#next-btn:focus, #add-btn:focus
+{
+    -webkit-box-shadow: 3px 2px 10px 8px rgba(120, 120, 120, 0.25);
+    -moz-box-shadow: 3px 2px 10px 8px rgba(120, 120, 120, 0.25);
+    box-shadow: 3px 2px 10px 8px rgba(120, 120, 120, 0.25);
+}
+
+#hide
+{
+    background-color: #cbc350;
+    width: 90px;
+    height: 70px;
+    position: absolute;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 15px;
+    display: none;
+}
+
+#hide:before
+{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #cbc350;
+    position: absolute;
+    transform: skew(0, 20deg);
+    margin-top: -18px;
+    margin-left: -15px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    color: yellow;
+    background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffcf39;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ba8c33;
+}
