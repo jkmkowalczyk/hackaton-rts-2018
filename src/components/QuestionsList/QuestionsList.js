@@ -68,12 +68,14 @@ export default class QuestionsList extends Component
             }
             if(temp6 === '')
             {
-                document.getElementById("odp"+(this.state.i-1).toString()).style.borderColor = "red";
+                document.getElementById("hide").style.display='inline';
+                document.getElementById("hide").style.top = e.clientY-230+'px';
+                document.getElementById("hide").style.left = 555+'px';
             }
         }
     }
 
-    writeToFirebase(){
+    writeToFirebase(e){
         if(this.state.array.length > 0 && document.getElementById("name-input").value !== '' && document.querySelector(".category-select").selectedIndex !== 0)
         {
             const test = {
@@ -92,6 +94,7 @@ export default class QuestionsList extends Component
             let temp3 = document.getElementById("odpb"+(this.state.i-1).toString()).value;
             let temp4 = document.getElementById("odpc"+(this.state.i-1).toString()).value;
             let temp5 = document.getElementById("odpd"+(this.state.i-1).toString()).value;
+            let temp6 = document.getElementById("odp"+(this.state.i-1).toString()).innerText;
             if(document.getElementById("name-input").value === '')
                 document.getElementById("name-input").style.borderColor = "red";
             if(document.querySelector(".category-select").selectedIndex === 0)
@@ -115,6 +118,12 @@ export default class QuestionsList extends Component
             if(temp5 === '')
             {
                 document.getElementById("odpd"+(this.state.i-1).toString()).style.borderColor = "red";
+            }
+            if(temp6 === '')
+            {
+                document.getElementById("hide").style.display='inline';
+                document.getElementById("hide").style.top = e.clientY-230+'px';
+                document.getElementById("hide").style.left = 555+'px';
             }
         }
     }
@@ -144,6 +153,7 @@ export default class QuestionsList extends Component
                     <div className="questions-container"><div>{this.state.questions}</div></div>
                     <button id="next-btn" onClick={this.BtnClick.bind(this)}>Następny</button>
                     <button id="add-btn" onClick={this.writeToFirebase.bind(this)}>Dodaj!</button>
+                    <div id="hide">Zaznacz prawidłowa odpowiedź!</div>
                 </div>
             </div>
         );

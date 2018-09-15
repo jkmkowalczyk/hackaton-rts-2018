@@ -51,6 +51,7 @@ export default class QuestionsItem extends Component
 
     OnRadioClick(e)
     {
+        document.getElementById("hide").style.display='none';
         if(this.state.lastClicked) if(this.state.lastClicked.value !== '')this.state.lastClicked.style.borderColor = "#dddddd";
         else this.state.lastClicked.style.borderColor = "red";
         this.setState({array: [
