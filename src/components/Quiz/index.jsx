@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import fire from "../../fire";
-import {Card} from 'semantic-ui-react'
+import {Button} from 'semantic-ui-react'
 import _ from "lodash"
 import "./styles.css"
 
@@ -33,13 +33,13 @@ class Quiz extends Component {
         console.log("question", question);
         return (
             <div className="question">
-                <Card.Group>
-                    <Card fluid color='blue' className="question-single">{question.pyt}</Card>
-                    <Card fluid color='red' className="answer-single">Odpowiedz A: {question.odpa}</Card>
-                    <Card fluid color='red' className="answer-single">Odpowiedz B: {question.odpb}</Card>
-                    <Card fluid color='red' className="answer-single">Odpowiedz C: {question.odpc}</Card>
-                    <Card fluid color='red' className="answer-single">Odpowiedz D: {question.odpd}</Card>
-                </Card.Group>
+                <div className="quiz-card-group">
+                    <p className="question-single">{question.pyt}</p>
+                    <button className="answer-single">Odpowiedz A: {question.odpa}</button>
+                    <button className="answer-single">Odpowiedz B: {question.odpb}</button>
+                    <button className="answer-single">Odpowiedz C: {question.odpc}</button>
+                    <button className="answer-single">Odpowiedz D: {question.odpd}</button>
+                </div>
             </div>
         );
     }
@@ -52,9 +52,19 @@ class Quiz extends Component {
             });
         }
     }
-
     render() {
-        return <div>{this.renderTest()}</div>;
+
+        return <div> 
+        <div className="bg">
+            <div className="background-question"> 
+              {this.renderTest()}
+                <div className="button-container">
+                    <Button className="back">Wyjdź</Button>
+                    <Button className="submit">Sprawdź mnie</Button>
+                </div>
+              </div>
+        </div>
+        </div>
     }
 }
 

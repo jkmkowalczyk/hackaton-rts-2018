@@ -1,12 +1,54 @@
-.question {
-    margin-bottom: 50px;
-    width: 500px;
+.body{
+    background-color: rgb(60, 96, 31);
 }
+.question{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid rgb(207, 204, 204);
+    background-color: rgb(207, 204, 204);
+    padding: 1%;
+    border-radius: 4px;
+}
+.question {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.bg{
+    background: url(../../img/login-pic.jpg);
+    width: 100%;
 
+}
+.background-question{
+    background-color:  rgb(60, 96, 31);
+    background-size: cover;
+    padding: 100px;
+    opacity: 0.95;
+}
 .question-single {
-    height: 60px;
+    width: 100%;
+    height: 30px;
+    font-size: 25px;
 }
 
 .answer-single {
     height: 40px;
+    width: 45%;
+    margin: 6px;
+    border-radius: 4px;
+    background-color: #f1dfdf;
+    transition: all 1.25s ease-in-out;
+}
+
+.answer-single:hover{
+    cursor:pointer;
+    background-color: rgb(156, 152, 152);
+}
+.button-container{
+   position: absolute;
+   left: 40%;
+}
+button{
+    width: 180px;
 }
