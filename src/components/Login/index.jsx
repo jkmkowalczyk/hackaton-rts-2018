@@ -73,12 +73,13 @@ class Login extends Component {
               <div className="login-overlay" />
             </div>
             <div >
-                <div className="logo">
+                <div >
                     <div className="login-logo" />
                 </div>
-                <div>
+                <div className="welcome-text">
                     <p>
-                       Masz ważny egzamin? Nie wiesz jak się do niego przygotować? W takim razie świetnie trafiłeś/aś!  Już teraz zaloguj się do RTS i przekonaj się jak nauka z nami może być prosta i przyjemna.
+                       Masz ważny egzamin? Nie wiesz jak się do niego przygotować? W takim razie świetnie trafiłeś/aś!<
+                           br></br>  Już teraz zaloguj się do RTS i przekonaj się, iż nauka z nami może być łatwa i przyjemna.
                     </p>
                 </div>
                 <Form onSubmit={this.handleSubmit} className="login-form">
@@ -90,13 +91,13 @@ class Login extends Component {
                 </FormItem>
                 <FormItem className="bottom-items-wrapper">
                     <Checkbox>Zapamietaj mnie</Checkbox>
-                    <a className="login-form-forgot" href="">
+                    <a className="login-form-forgot login-group" href="">
                     Przypomnij hasło
                     </a>
                     <Button type="primary" htmlType="submit" className="login-form-button" onClick={this.handleLoginClick.bind(this)}>
                     Zaloguj się
                     </Button>
-                    lub <a href="">Zarejestruj się już teraz!</a>
+                    lub <a className="login-group" href="">Zarejestruj się już teraz!</a>
                 </FormItem>
                 </Form>
             </div>

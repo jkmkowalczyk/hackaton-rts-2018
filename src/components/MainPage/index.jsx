@@ -5,6 +5,8 @@ import {fetchTests} from "../../actions";
 import Quizes from "../Quizes";
 import fire from "../../fire";
 import _ from "lodash";
+import Categories from "../Categories/Categories"
+import "../../index.css"
 
 class MainPage extends Component {
     constructor(props) {
@@ -32,7 +34,8 @@ class MainPage extends Component {
     }
 
     render() {
-        return (<div className="content">
+        return (
+            <div className="content">
                 <div className="nav">
                     <Navbar history={this.props.history}/>
                 </div>
