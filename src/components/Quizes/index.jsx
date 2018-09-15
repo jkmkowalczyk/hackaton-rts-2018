@@ -18,7 +18,7 @@ class Quizes extends Component {
     console.log("mounting", category);
     fire
       .database()
-      .ref("tests")
+      .ref("/tests")
       .orderByChild("category")
       .equalTo(category)
       .once("value")
