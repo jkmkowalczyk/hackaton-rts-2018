@@ -1,8 +1,8 @@
 import {AutoComplete} from 'antd';
 import React, {Component} from 'react';
 import 'antd/dist/antd.css';
-import data from '../../test-list';
 import './Navbar.css';
+import fire from "../../fire";
 
 
 class Searchbar extends Component {
@@ -11,14 +11,26 @@ class Searchbar extends Component {
         testList: []
     };
 
-    loadTests = () => {
-        this.setState({testList: data});
+    onlyUnique = (value, index, self) => {
+        return self.indexOf(value) === index;
+    };
+
+    getTests = () => {
+        let list = [];
+        fire.database().ref("tests").on("value", snapshot => {
+            let obj = snapshot.val();
+            Object.keys(obj).forEach(key => {
+                list.push(obj[key].category);
+            });
+            let uniqueList = list.filter(this.onlyUnique);
+            this.setState({testList: uniqueList});
+        });
     };
 
 
     componentWillMount() {
-        this.loadTests();
-    }
+        this.getTests();
+    };
 
     render() {
         return (
@@ -26,7 +38,7 @@ class Searchbar extends Component {
                 <AutoComplete
                     style={{width: 300}}
                     dataSource={this.state.testList}
-                    placeholder="znajdź test"
+                    placeholder="filtruj po kategoriach"
                     filterOption={(inputValue, option) => option.props.children.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1}
                     autoFocus={true}
                 />
