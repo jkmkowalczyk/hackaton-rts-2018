@@ -5,8 +5,10 @@ import {fetchTests} from "../../actions";
 import Quizes from "../Quizes";
 import fire from "../../fire";
 import _ from "lodash";
-import Categories from "../Categories/Categories"
-import "../../index.css"
+import Categories from "../Categories/Categories";
+import "../../index.css";
+import { Button } from "antd";
+import Sticky from "react-sticky-el";
 
 class MainPage extends Component {
     constructor(props) {
@@ -32,8 +34,8 @@ class MainPage extends Component {
             return <Quizes tests={obj}/>;
         });
     }
-
-    render() {
+   
+    render() { 
         return (
             <div className="content">
                 <div className="nav">
@@ -49,7 +51,7 @@ class MainPage extends Component {
                 <div>
                     <Categories/>
                 </div>
-                <div>{this.renderTests()}</div>
+                <div>{this.renderTests()}</div> 
             </div>
         );
     }

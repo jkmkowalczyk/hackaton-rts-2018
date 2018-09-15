@@ -87,11 +87,23 @@ h2{
     transform: rotate(180deg);
     font-family: 'Montserrat', sans-serif;
 }
+.welcome-text{
+  z-index: 20;
+  color: white;
+}
 
-/* media queries */
-@media only screen and (max-width: 1000px) {
-    h2{
-    font-size: 3em;
-    font-family: 'Montserrat', sans-serif;
+@media screen and (max-width: 615px)
+{
+   h2{
+     font-size: 3em;
+     writing-mode: horizontal-tb;
+     transform: rotate(360deg);
+     top: 130%;
+     left: 20%;
+   }
+   .Categories-container{
+ 
+  margin: 50% auto;
+
 }
 }
