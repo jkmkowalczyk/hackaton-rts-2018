@@ -7,7 +7,7 @@ class Test extends Component {
 
     q;
     c;
-    
+
     get = () => {
         fire.database().ref("tests/" + "test1").on("value", snapshot => {
             this.q = snapshot.val().pytania;
