@@ -20,7 +20,7 @@ class Searchbar extends Component {
         fire.database().ref("tests").on("value", snapshot => {
             let obj = snapshot.val();
             Object.keys(obj).forEach(key => {
-                list.push(obj[key].category);
+                list.push(obj[key].name);
             });
             let uniqueList = list.filter(this.onlyUnique);
             this.setState({testList: uniqueList});
@@ -38,7 +38,7 @@ class Searchbar extends Component {
                 <AutoComplete
                     style={{width: 300}}
                     dataSource={this.state.testList}
-                    placeholder="filtruj po kategoriach"
+                    placeholder="wyszukaj test"
                     filterOption={(inputValue, option) => option.props.children.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1}
                     autoFocus={true}
                 />

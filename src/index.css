@@ -13,7 +13,6 @@ body {
 }
 
 .item {
-    font-family: 'Roboto', sans-serif;
+    padding: 0 10px !important;
+    font-family: 'Roboto', sans-serif !important;
 }
-
-
