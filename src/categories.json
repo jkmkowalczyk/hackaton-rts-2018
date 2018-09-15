@@ -1,0 +1,26 @@
+{
+  "angielski": {
+    "name": "Jezyk Angielski"
+  },
+  "polski": {
+    "name": "Jezyk Polski"
+  },
+  "matematyka": {
+    "name": "Matematyka"
+  },
+  "fizyka": {
+    "name": "Fizyka"
+  },
+  "chemia": {
+    "name": "Chemia"
+  },
+  "biologia": {
+    "name": "Biologia"
+  },
+  "informatyka": {
+    "name": "Informatyka"
+  },
+  "historia": {
+    "name": "Historia"
+  }
+}
