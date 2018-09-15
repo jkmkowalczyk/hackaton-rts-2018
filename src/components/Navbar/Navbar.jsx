@@ -42,9 +42,6 @@ class Navbar extends Component {
                 <p className="navbar-title">REACT TESTING SERVICE</p>
               </Menu.Item>
               <Menu.Menu position="right">
-              <Menu.Item>
-                    <button className="add-button">+</button>
-              </Menu.Item>
                 <Menu.Item>
                   <Searchbar />
                 </Menu.Item>
@@ -54,6 +51,9 @@ class Navbar extends Component {
                     Cześć {this.state.userName}
                   </div>
                 </Menu.Item>
+              <Menu.Item>
+                <button className="add-button"> + Dodaj nowy test</button>
+              </Menu.Item>
                 <Menu.Item onClick={this.handleLogoutClick}>
                   Wyloguj
                 </Menu.Item>
