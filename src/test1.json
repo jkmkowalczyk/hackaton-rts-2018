@@ -1,0 +1,248 @@
+{
+  "test1": {
+    "category": "geografia",
+    "pytania": [
+      {
+        "id": "1",
+        "pyt": "Wskaż nazwe stolicy Hiszpanii",
+        "odpa": "Barcelona",
+        "odpb": "Valencia",
+        "odpc": "Madryt",
+        "odpd": "Sewilla",
+        "odp": "Madryt"
+      },
+      {
+        "id": "2",
+        "pyt": "Wskaż nazwe stolicy Hiszpanii",
+        "odpa": "Barcelona",
+        "odpb": "Valencia",
+        "odpc": "Madryt",
+        "odpd": "Sewilla",
+        "odp": "Madryt"
+      },
+      {
+        "id": "3",
+        "pyt": "Wskaż nazwe stolicy Polski",
+        "odpa": "Krakow",
+        "odpb": "Wroclaw",
+        "odpc": "Szczecin",
+        "odpd": "Warszwa",
+        "odp": "Warszawa"
+      },
+      {
+        "id": "4",
+        "pyt": "Wskaż nazwe stolicy Niemiec",
+        "odpa": "Monachium",
+        "odpb": "Berlin",
+        "odpc": "Dortmund",
+        "odpd": "Mainz",
+        "odp": "Berlin"
+      }
+    ]
+  },
+  "test5": {
+    "category": "geografia",
+    "pytania": [
+      {
+        "id": "1",
+        "pyt": "Wskaż nazwe stolicy Hiszpanii",
+        "odpa": "Barcelona",
+        "odpb": "Valencia",
+        "odpc": "Madryt",
+        "odpd": "Sewilla",
+        "odp": "Madryt"
+      },
+      {
+        "id": "2",
+        "pyt": "Wskaż nazwe stolicy Hiszpanii",
+        "odpa": "Barcelona",
+        "odpb": "Valencia",
+        "odpc": "Madryt",
+        "odpd": "Sewilla",
+        "odp": "Madryt"
+      },
+      {
+        "id": "3",
+        "pyt": "Wskaż nazwe stolicy Polski",
+        "odpa": "Krakow",
+        "odpb": "Wroclaw",
+        "odpc": "Szczecin",
+        "odpd": "Warszwa",
+        "odp": "Warszawa"
+      },
+      {
+        "id": "4",
+        "pyt": "Wskaż nazwe stolicy Niemiec",
+        "odpa": "Monachium",
+        "odpb": "Berlin",
+        "odpc": "Dortmund",
+        "odpd": "Mainz",
+        "odp": "Berlin"
+      }
+    ]
+  },
+  "test2": {
+    "category": "matematyka",
+    "pytania": [
+      {
+        "id": "1",
+        "pyt": "Wskaż nazwe stolicy Hiszpanii",
+        "odpa": "Barcelona",
+        "odpb": "Valencia",
+        "odpc": "Madryt",
+        "odpd": "Sewilla",
+        "odp": "Madryt"
+      },
+      {
+        "id": "2",
+        "pyt": "Wskaż nazwe stolicy Hiszpanii",
+        "odpa": "Barcelona",
+        "odpb": "Valencia",
+        "odpc": "Madryt",
+        "odpd": "Sewilla",
+        "odp": "Madryt"
+      },
+      {
+        "id": "3",
+        "pyt": "Wskaż nazwe stolicy Polski",
+        "odpa": "Krakow",
+        "odpb": "Wroclaw",
+        "odpc": "Szczecin",
+        "odpd": "Warszwa",
+        "odp": "Warszawa"
+      },
+      {
+        "id": "4",
+        "pyt": "Wskaż nazwe stolicy Niemiec",
+        "odpa": "Monachium",
+        "odpb": "Berlin",
+        "odpc": "Dortmund",
+        "odpd": "Mainz",
+        "odp": "Berlin"
+      }
+    ]
+  },
+  "test3": {
+    "category": "geografia",
+    "pytania": [
+      {
+        "id": "1",
+        "pyt": "Wskaż nazwe stolicy Hiszpanii",
+        "odpa": "Barcelona",
+        "odpb": "Valencia",
+        "odpc": "Madryt",
+        "odpd": "Sewilla",
+        "odp": "Madryt"
+      },
+      {
+        "id": "2",
+        "pyt": "Wskaż nazwe stolicy Hiszpanii",
+        "odpa": "Barcelona",
+        "odpb": "Valencia",
+        "odpc": "Madryt",
+        "odpd": "Sewilla",
+        "odp": "Madryt"
+      },
+      {
+        "id": "3",
+        "pyt": "Wskaż nazwe stolicy Polski",
+        "odpa": "Krakow",
+        "odpb": "Wroclaw",
+        "odpc": "Szczecin",
+        "odpd": "Warszwa",
+        "odp": "Warszawa"
+      },
+      {
+        "id": "4",
+        "pyt": "Wskaż nazwe stolicy Niemiec",
+        "odpa": "Monachium",
+        "odpb": "Berlin",
+        "odpc": "Dortmund",
+        "odpd": "Mainz",
+        "odp": "Berlin"
+      }
+    ]
+  },
+  "test4": {
+    "category": "geografia",
+    "pytania": [
+      {
+        "id": "1",
+        "pyt": "Wskaż nazwe stolicy Hiszpanii",
+        "odpa": "Barcelona",
+        "odpb": "Valencia",
+        "odpc": "Madryt",
+        "odpd": "Sewilla",
+        "odp": "Madryt"
+      },
+      {
+        "id": "2",
+        "pyt": "Wskaż nazwe stolicy Hiszpanii",
+        "odpa": "Barcelona",
+        "odpb": "Valencia",
+        "odpc": "Madryt",
+        "odpd": "Sewilla",
+        "odp": "Madryt"
+      },
+      {
+        "id": "3",
+        "pyt": "Wskaż nazwe stolicy Polski",
+        "odpa": "Krakow",
+        "odpb": "Wroclaw",
+        "odpc": "Szczecin",
+        "odpd": "Warszwa",
+        "odp": "Warszawa"
+      },
+      {
+        "id": "4",
+        "pyt": "Wskaż nazwe stolicy Niemiec",
+        "odpa": "Monachium",
+        "odpb": "Berlin",
+        "odpc": "Dortmund",
+        "odpd": "Mainz",
+        "odp": "Berlin"
+      }
+    ]
+  },
+  "test8": {
+    "category": "polski",
+    "pytania": [
+      {
+        "id": "1",
+        "pyt": "Wskaż nazwe stolicy Hiszpanii",
+        "odpa": "Barcelona",
+        "odpb": "Valencia",
+        "odpc": "Madryt",
+        "odpd": "Sewilla",
+        "odp": "Madryt"
+      },
+      {
+        "id": "2",
+        "pyt": "Wskaż nazwe stolicy Hiszpanii",
+        "odpa": "Barcelona",
+        "odpb": "Valencia",
+        "odpc": "Madryt",
+        "odpd": "Sewilla",
+        "odp": "Madryt"
+      },
+      {
+        "id": "3",
+        "pyt": "Wskaż nazwe stolicy Polski",
+        "odpa": "Krakow",
+        "odpb": "Wroclaw",
+        "odpc": "Szczecin",
+        "odpd": "Warszwa",
+        "odp": "Warszawa"
+      },
+      {
+        "id": "4",
+        "pyt": "Wskaż nazwe stolicy Niemiec",
+        "odpa": "Monachium",
+        "odpb": "Berlin",
+        "odpc": "Dortmund",
+        "odpd": "Mainz",
+        "odp": "Berlin"
+      }
+    ]
+  }
+}
