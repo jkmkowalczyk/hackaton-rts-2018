@@ -34,18 +34,20 @@ class Quiz extends Component {
             <div className="question">
                 <div className="quiz-card-group">
                     <p className="question-single">{question.pyt}</p>
-                    <Button basic color='teal' className="answer-single">
-                        {question.odpa}
-                    </Button>
-                    <Button basic color='teal' className="answer-single">
-                        {question.odpb}
-                    </Button>
-                    <Button basic color='teal' className="answer-single">
-                        {question.odpc}
-                    </Button>
-                    <Button basic color='teal' className="answer-single">
-                        {question.odpd}
-                    </Button>
+                    <div className="question-holder">
+                        <Button basic color='teal' className="answer-single">
+                            {question.odpa}
+                        </Button>
+                        <Button basic color='teal' className="answer-single">
+                            {question.odpb}
+                        </Button>
+                        <Button basic color='teal' className="answer-single">
+                            {question.odpc}
+                        </Button>
+                        <Button basic color='teal' className="answer-single">
+                            {question.odpd}
+                        </Button>
+                    </div>
                 </div>
             </div>
         );
