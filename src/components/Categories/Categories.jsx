@@ -1,25 +1,42 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import Category from "./Category";
-import "./Categories.css"
+import "./Categories.css";
+import fire from "../../fire";
+import _ from "lodash";
 
 class Categories extends Component {
-    render() {
-        return (
-            <div>
-                <div className="Categories-container">
-                    <Category title={"Angielski"} number={1}/>
-                    <Category title={"Matematyka"} number={2}/>
-                    <Category title={"Biologia"} number={3}/>
-                    <Category title={"Chemia"} number={4}/>
-                    <Category title={"Geografia"} number={5}/>
-                    <Category title={"Fizyka"} number={6}/>
-                </div>
-                <div className="Categories-container-header">
-                    <h2>KATEGORIE</h2>
-                </div>
-            </div>
-        );
-    }
+  constructor(props) {
+    super(props);
+
+    this.state = { categories: [] };
+  }
+
+  componentDidMount() {
+    fire
+      .database()
+      .ref("categories")
+      .once("value")
+      .then(snap => this.setState({ categories: snap.val() }));
+  }
+
+  renderCategories() {
+    let n = 0;
+    return _.map(this.state.categories, (obj, index) => {
+      n++;
+      return <Category name={obj.name} id={index} number={n} />;
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <div className="Categories-container">{this.renderCategories()}</div>
+        <div className="Categories-container-header">
+          <h2>KATEGORIE</h2>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Categories;

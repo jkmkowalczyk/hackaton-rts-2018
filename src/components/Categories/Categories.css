@@ -1,67 +1,73 @@
-
-.Categories-tiles{
+.Categories-tiles {
   width: 340px;
   height: 340px;
-  margin: 2%;
+  margin: 10px;
   padding: auto;
   font-size: 25px;
   transition-timing-function: ease-in-out;
 }
-.Categories-tiles:hover,.Categories-tiles:focus{
+.Categories-tiles:hover,
+.Categories-tiles:focus {
   transform: scale(1.05);
   color: black;
 }
-.tile1{
-  background-color: rgb(45, 71, 24);
-  border-color:rgb(45, 71, 24);
-}
-.tile2{
-  background-color: rgb(60, 96, 31);
-  border-color: rgb(60, 96, 31);
-}
-.tile3{
-  background-color: rgb(60, 96, 31);
-  border-color:rgb(60, 96, 31);
-}
-.tile4{
-  background-color:rgb(84, 135, 44) ;
-  border-color: rgb(84, 135, 44) ;
-}
-.tile5{
-  background-color:rgb(107, 174, 56) ;
-  border-color:rgb(107, 174, 56) ;
-}
-.tile6{
-  background-color:rgb(133, 199, 81);
-  border-color:rgb(133, 199, 81);
-}
-
-.tile1:hover, .tile1:focus{
+.tile1 {
   background-color: rgb(45, 71, 24);
   border-color: rgb(45, 71, 24);
 }
-.tile2:hover,.tile2:focus{
+.tile2 {
   background-color: rgb(60, 96, 31);
   border-color: rgb(60, 96, 31);
 }
-.tile3:hover,.tile3:focus{
+.tile3 {
   background-color: rgb(60, 96, 31);
-  border-color: rgb(60, 96, 31) ;
+  border-color: rgb(60, 96, 31);
 }
-.tile4:hover,.tile4:focus{
-  background-color:rgb(84, 135, 44) ;
-  border-color: rgb(84, 135, 44) ;
+.tile4 {
+  background-color: rgb(84, 135, 44);
+  border-color: rgb(84, 135, 44);
 }
-.tile5:hover,.tile5:focus{
-  background-color:rgb(107, 174, 56) ;
-  border-color:rgb(107, 174, 56) ;
+.tile5 {
+  background-color: rgb(107, 174, 56);
+  border-color: rgb(107, 174, 56);
 }
-.tile6:hover,.tile6:focus{
-  background-color:rgb(133, 199, 81);
-  border-color:rgb(133, 199, 81);
+.tile6 {
+  background-color: rgb(133, 199, 81);
+  border-color: rgb(133, 199, 81);
 }
 
-.Categories-container{
+.tile1:hover,
+.tile1:focus {
+  background-color: rgb(45, 71, 24);
+  border-color: rgb(45, 71, 24);
+}
+.tile2:hover,
+.tile2:focus {
+  background-color: rgb(60, 96, 31);
+  border-color: rgb(60, 96, 31);
+}
+.tile3:hover,
+.tile3:focus {
+  background-color: rgb(60, 96, 31);
+  border-color: rgb(60, 96, 31);
+}
+.tile4:hover,
+.tile4:focus {
+  background-color: rgb(84, 135, 44);
+  border-color: rgb(84, 135, 44);
+}
+.tile5:hover,
+.tile5:focus {
+  background-color: rgb(107, 174, 56);
+  border-color: rgb(107, 174, 56);
+}
+.tile6:hover,
+.tile6:focus {
+  background-color: rgb(133, 199, 81);
+  border-color: rgb(133, 199, 81);
+}
+
+.Categories-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,20 +75,20 @@
   max-width: 70%;
   margin: 5% auto;
 }
-.Categories-container-header{
+.Categories-container-header {
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 30%;
   margin: 8% 0;
 }
-h2{
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    font-size: 6em;
-    position: absolute;
-    top: 130%;
-    left: 5%;
-    transform: rotate(180deg);
-    font-family: 'Montserrat', sans-serif;
+h2 {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 6em;
+  position: absolute;
+  top: 1100px;
+  left: 5%;
+  transform: rotate(180deg);
+  font-family: "Montserrat", sans-serif;
 }

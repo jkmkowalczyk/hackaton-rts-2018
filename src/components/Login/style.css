@@ -1,92 +1,92 @@
-.login-content{
-  background:url(../../img/login-pic.jpg);
+.login-content {
+  background: url(../../img/login-pic.jpg);
   background-color: #cccccc;
   height: 1000px;
-  width:70%;
+  width: 70%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10%;
   position: relative;
 }
-.login-overlay{
+.login-overlay {
   height: 1000px;
   padding: 10%;
   width: 100%;
   background-color: #3c601f;
   opacity: 0.8;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
 }
 .login-form {
-    margin: auto;
-    width: 550px;
-    z-index: 10;
-    background-color: white;
-    padding: 6%;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    border-radius: 4px;
+  margin: auto;
+  width: 550px;
+  z-index: 10;
+  background-color: white;
+  padding: 6%;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  border-radius: 4px;
 }
 .login-logo {
-    height: 100px;
-    width: 92px;
-    background: url("../../img/logo.png");
-    background-size: cover;
-    z-index:100;
-    position: absolute;
-    top: 15%;
-    right: 10%;
+  height: 100px;
+  width: 92px;
+  background: url("../../img/logo.png");
+  background-size: cover;
+  z-index: 100;
+  position: absolute;
+  top: 15%;
+  right: 10%;
 }
 
 .ant-form-item-children {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .google-button {
-    cursor: pointer;
-    margin: 15px 0px;
-    height: 40px;
-    border-width: 0;
-    background: white;
-    color: #737373;
-    border-radius: 5px;
-    white-space: nowrap;
-    box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
-    transition-property: background-color, box-shadow;
-    transition-duration: 150ms;
-    transition-timing-function: ease-in-out;
-    padding: 0;
+  cursor: pointer;
+  margin: 15px 0px;
+  height: 40px;
+  border-width: 0;
+  background: white;
+  color: #737373;
+  border-radius: 5px;
+  white-space: nowrap;
+  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
+  transition-property: background-color, box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  padding: 0;
 }
 
 .google-button:focus,
 .google-button:hover {
-    box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.1);
 }
 
 .google-button:active {
-    background-color: #e5e5e5;
-    box-shadow: none;
-    transition-duration: 10ms;
+  background-color: #e5e5e5;
+  box-shadow: none;
+  transition-duration: 10ms;
 }
 
 .google-button__icon {
-    display: inline-block;
-    margin: 8px 0 8px 8px;
-    width: 18px;
-    height: 18px;
-    box-sizing: border-box;
+  display: inline-block;
+  margin: 8px 0 8px 8px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
 }
 
 .google-button__text {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 24px;
-    font-size: 14px;
-    font-weight: bold;
-     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 24px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
 }

@@ -10,7 +10,7 @@ class Quiz extends Component {
   }
 
   componentDidMount() {
-    const name = this.props.location.state.testId;
+    const name = this.props.match.params.id;
     fire
       .database()
       .ref("tests")
