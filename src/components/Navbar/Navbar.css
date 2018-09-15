@@ -3,10 +3,10 @@
     width: 52px;
     background: url("logo.png");
     background-size: cover;
+    margin: 0 20px;
 }
 
 .navbar-user-container-avatar {
-
     font-size: 20px;
     padding-right: 10px;
 }
