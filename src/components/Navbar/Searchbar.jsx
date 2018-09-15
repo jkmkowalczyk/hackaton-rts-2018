@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import 'antd/dist/antd.css';
 import './Navbar.css';
 import fire from "../../fire";
+import Quiz from "../Quiz";
 
 
 class Searchbar extends Component {
@@ -32,6 +33,12 @@ class Searchbar extends Component {
         this.getTests();
     };
 
+
+    onSelect = (value) => {
+        console.log(value);
+        return <Quiz test={value}/>
+    };
+
     render() {
         return (
             <div className="searchbar-container">
@@ -41,6 +48,7 @@ class Searchbar extends Component {
                     placeholder="wyszukaj test"
                     filterOption={(inputValue, option) => option.props.children.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1}
                     autoFocus={true}
+                    onSelect={this.onSelect}
                 />
             </div>
         )

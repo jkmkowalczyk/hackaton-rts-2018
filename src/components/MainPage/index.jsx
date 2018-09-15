@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Navbar from "../Navbar/Navbar";
 import { connect } from "react-redux";
 import { fetchTests } from "../../actions";
-import Quiz from "../Quiz";
+import Quizes from "../Quizes";
 import fire from "../../fire";
 import _ from "lodash";
 
@@ -27,7 +27,7 @@ class MainPage extends Component {
 
   renderTests() {
     return _.map(this.state.tests, obj => {
-      return <Quiz test={obj} />;
+      return <Quizes tests={obj} />;
     });
   }
 
