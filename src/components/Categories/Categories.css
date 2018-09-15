@@ -1,7 +1,7 @@
 
 .Categories-tiles{
-  width: 300px;
-  height: 300px;
+  width: 340px;
+  height: 340px;
   margin: 2%;
   padding: auto;
   font-size: 25px;
@@ -67,22 +67,22 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 70%;
-  margin: 8% auto;
+  margin: 5% auto;
 }
 .Categories-container-header{
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   max-width: 30%;
   margin: 8% 0;
- 
 }
 h2{
     writing-mode: vertical-rl;
     text-orientation: mixed;
     font-size: 6em;
     position: absolute;
-    top: 90%;
+    top: 130%;
+    left: 5%;
     transform: rotate(180deg);
+    font-family: 'Montserrat', sans-serif;
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Button from "antd/lib/button";
 import Category from "./Category";
 import "./Categories.css"
+import Sticky from "react-sticky-el";
 
 class Categories extends Component {
     render() {
@@ -14,9 +14,9 @@ class Categories extends Component {
               <Category title={"Geografia"} number={5} />
               <Category title={"Fizyka"} number={6} />
             </div>
-            <div className="Categories-container-header">
-                <h2>KATEGORIE</h2>
-            </div>
+                <div className="Categories-container-header">
+                    <h2>KATEGORIE</h2>
+                </div>
           </div>;
     }
 }
